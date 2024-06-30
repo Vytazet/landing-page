@@ -1,5 +1,5 @@
 body{
-  font-family: Roboto, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -22,11 +22,12 @@ ul{
   gap: 16px;
 }
 
-h3{
+h2{
   font-size: 48px;
-  font-weight: bolder;
+  font-weight: 900;
   color: #F9FAF8;
   margin: 0;
+  text-shadow: 1px 0 #888888;
 }
 
 .subtext{
@@ -42,9 +43,10 @@ h3{
 }
 
 .logo{
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 24px;
   color: #F9FAF8;
+  text-shadow: 1px 0 #888888;
 }
 
 .sign-up{
@@ -65,10 +67,15 @@ h3{
   justify-content: center;
   align-items: center;
   background-color: gray;
+  color: #E5E7EB;
 }
 
 .hero{
   display: flex;
   gap: 48px;
   margin: 96px 0;
+}
+
+button{
+  font-size: 16px;
 }
