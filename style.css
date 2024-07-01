@@ -5,7 +5,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  min-width: 1000px;
+  min-width: 800px;
 }
 
 .top-part{
@@ -120,7 +120,7 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 48px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -128,8 +128,15 @@ h2{
   padding: 100px 15%;
   background-color: #E5E7EB;
   display: flex;
+  justify-content: center;
+}
+
+.quote-content{
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 600px;
+  max-width: 1000px;
 }
 
 .quote{
@@ -137,7 +144,6 @@ h2{
   font-weight: 100;
   font-style: italic;
   color: #1F2937;
-  width: 800px;
   align-self: center;
 }
 
