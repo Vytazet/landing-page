@@ -1,11 +1,16 @@
 body{
   font-family: 'Roboto', Helvetica, sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 1000px;
 }
 
 .top-part{
   background-color: #1F2937;
-  padding: 16px 200px;
+  padding: 16px 10%;
 }
 
 a{
@@ -20,6 +25,10 @@ ul{
   list-style-type: none;
   display: flex;
   gap: 16px;
+}
+
+li{
+  min-width: 160px;
 }
 
 h1{
@@ -37,9 +46,6 @@ p{
 .subtext{
   font-size: 18px;
   color: #E5E7EB;
-}
-
-.subtext{
   margin-bottom: 16px;
 }
 
@@ -47,6 +53,7 @@ p{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .logo{
@@ -65,8 +72,8 @@ p{
   border-radius: 8px;
 }
 
-.left-hero, .right-hero{
-  flex: 1;
+.left-hero{
+  flex: 1 1 480px;
 }
 
 .right-hero{
@@ -75,11 +82,15 @@ p{
   align-items: center;
   background-color: gray;
   color: #E5E7EB;
+  width: 400px;
+  height: 200px;
+  flex-shrink: 0;
 }
 
 .hero{
   display: flex;
-  gap: 48px;
+  justify-content: space-between;
+  gap: 10%;
   margin: 96px 0;
 }
 
@@ -105,7 +116,7 @@ h2{
   border: 2px solid #3882F6;
 }
 
-.middle-content{
+.cards-container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,8 +125,11 @@ h2{
 }
 
 .quote-section{
-  padding: 100px 300px;
+  padding: 100px 15%;
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .quote{
@@ -123,12 +137,15 @@ h2{
   font-weight: 100;
   font-style: italic;
   color: #1F2937;
+  width: 800px;
+  align-self: center;
 }
 
 .quote-author{
   font-size: 20px;
   text-align: right;
   font-weight: bold;
+  align-self: flex-end;
 }
 
 .footer{
